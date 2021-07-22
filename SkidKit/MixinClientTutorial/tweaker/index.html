@@ -13,14 +13,14 @@
         <meta name="author" content="Basilicous">
       
       
-        <link rel="canonical" href="https://basil.is-a.dev/SkidKit/MixinClientTutorial/setting_up/">
+        <link rel="canonical" href="https://basil.is-a.dev/SkidKit/MixinClientTutorial/tweaker/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.2.1, mkdocs-material-7.1.10">
     
     
       
-        <title>2 | Setting up - SkidKit</title>
+        <title>3 | Making a tweaker - SkidKit</title>
       
     
     
@@ -67,7 +67,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#2-setting-up" class="md-skip">
+        <a href="#3-making-a-tweaker" class="md-skip">
           Skip to content
         </a>
       
@@ -97,7 +97,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              2 | Setting up
+              3 | Making a tweaker
             
           </span>
         </div>
@@ -225,6 +225,18 @@
             
   
   
+  
+    <li class="md-nav__item">
+      <a href="../setting_up/" class="md-nav__link">
+        2 | Setting up
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
     
   
   
@@ -237,12 +249,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          2 | Setting up
+          3 | Making a tweaker
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        2 | Setting up
+        3 | Making a tweaker
       </a>
       
         
@@ -260,74 +272,33 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#creating-a-new-project" class="md-nav__link">
-    Creating a new project
+  <a href="#what-is-a-tweaker" class="md-nav__link">
+    What is a Tweaker?
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#customizing-the-template" class="md-nav__link">
-    Customizing the template
+  <a href="#making-the-class" class="md-nav__link">
+    Making the class
   </a>
   
-    <nav class="md-nav" aria-label="Customizing the template">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#writing-the-tweaker" class="md-nav__link">
+    Writing the Tweaker
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#you-should-now-be-able-to-run-the-client" class="md-nav__link">
+    🥳 You should now be able to run the client
+  </a>
+  
+    <nav class="md-nav" aria-label="🥳 You should now be able to run the client">
       <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#buildgradle" class="md-nav__link">
-    Build.gradle
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#little-gradle-fix" class="md-nav__link">
-    Little gradle fix
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#mixin-file" class="md-nav__link">
-    Mixin file
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#finishing-off" class="md-nav__link">
-    Finishing off
-  </a>
-  
-    <nav class="md-nav" aria-label="Finishing off">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#creating-the-skeleton" class="md-nav__link">
-    Creating the skeleton
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#configuring-the-project" class="md-nav__link">
-    Configuring the project
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#generating-run-configurations" class="md-nav__link">
-    Generating run configurations
-  </a>
-  
-</li>
         
           <li class="md-nav__item">
   <a href="#how-can-i-get-help-ask-questions-etcetera" class="md-nav__link">
@@ -345,18 +316,6 @@
   
 </nav>
       
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../tweaker/" class="md-nav__link">
-        3 | Making a tweaker
-      </a>
     </li>
   
 
@@ -537,74 +496,33 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#creating-a-new-project" class="md-nav__link">
-    Creating a new project
+  <a href="#what-is-a-tweaker" class="md-nav__link">
+    What is a Tweaker?
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#customizing-the-template" class="md-nav__link">
-    Customizing the template
+  <a href="#making-the-class" class="md-nav__link">
+    Making the class
   </a>
   
-    <nav class="md-nav" aria-label="Customizing the template">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#writing-the-tweaker" class="md-nav__link">
+    Writing the Tweaker
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#you-should-now-be-able-to-run-the-client" class="md-nav__link">
+    🥳 You should now be able to run the client
+  </a>
+  
+    <nav class="md-nav" aria-label="🥳 You should now be able to run the client">
       <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#buildgradle" class="md-nav__link">
-    Build.gradle
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#little-gradle-fix" class="md-nav__link">
-    Little gradle fix
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#mixin-file" class="md-nav__link">
-    Mixin file
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#finishing-off" class="md-nav__link">
-    Finishing off
-  </a>
-  
-    <nav class="md-nav" aria-label="Finishing off">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#creating-the-skeleton" class="md-nav__link">
-    Creating the skeleton
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#configuring-the-project" class="md-nav__link">
-    Configuring the project
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#generating-run-configurations" class="md-nav__link">
-    Generating run configurations
-  </a>
-  
-</li>
         
           <li class="md-nav__item">
   <a href="#how-can-i-get-help-ask-questions-etcetera" class="md-nav__link">
@@ -631,161 +549,205 @@
               
                 
                 
-                <h1 id="2-setting-up">2 | Setting up</h1>
+                <h1 id="3-making-a-tweaker">3 | Making a tweaker</h1>
 <hr />
-<h2 id="creating-a-new-project">Creating a new project</h2>
-<p>Click the create new project button on IDEA</p>
-<p><img alt="New project" src="../../res/ST_NEW_PROJ.png" /></p>
-<p>Go through the dialog setting options as you please, until you can create your project</p>
+<h2 id="what-is-a-tweaker">What is a Tweaker?</h2>
+<p>A tweaker allows arguments to be passed into it, and then allow you to inject your mixins into the Minecraft class loader</p>
 <hr />
-<h2 id="customizing-the-template">Customizing the template</h2>
-<h3 id="buildgradle">Build.gradle</h3>
-<p>So now we need to convert this from a template to your own project</p>
-<p>First open <code>build.gradle</code>, and <a href="https://github.com/SkidKit/MixinTemplate/blob/master/build.gradle">paste the code from here</a> to your <code>build.gradle</code></p>
-<p>I want you to decide on the following things</p>
-<ul>
-<li>A project name<ul>
-<li>The name of your client</li>
-</ul>
-</li>
-<li>A group name<ul>
-<li>This is a top level layout of your package structure, please <a href="http://maven.apache.org/guides/mini/guide-naming-conventions.html">read here</a> if you do not understand what it is</li>
-</ul>
-</li>
-</ul>
-<p>Now you must do the following things</p>
-<ol>
-<li>Go to line 25 and change the word <code>GROUP_NAME</code> to whatever you have decided your group name to be</li>
-<li>Go to line 26 and change the word <code>BASE_NAME</code> to whatever you have decided for your project name to be</li>
-<li>Go to line 33 and change the word <code>GROUP_NAME</code> to your group name, and the word <code>PROJECT_NAME</code> to your project name + the word <code>Tweaker</code> (Ie: MixinClientTutorialTweaker)</li>
-<li>Go to line 67 and change the word <code>PROJECT_NAME</code> to your project's name</li>
-<li>Go to line 91 and change the word <code>PROJECT_NAME</code> to your project'sname</li>
-<li>Lastly, go to line 92 and change the word <code>GROUP_NAME</code> to your decided group name, and change <code>TWEAKER_NAME</code> to your project's name + the word <code>Tweaker</code></li>
-</ol>
-<p><a href="https://gist.github.com/LowSpecCorgi/68dbaa069c95494c4687905e75f3e882">View the an example of a customised <code>build.gradle</code> here</a></p>
-<hr />
-<h2 id="little-gradle-fix">Little gradle fix</h2>
-<p>Open the file <code>gradle-wrapper.properties</code>
-<div class="highlight"><pre><span></span><code>project
-    -&gt; gradle
-        -&gt; wrapper
-            -&gt; gradle-wrapper.properties &lt;-- Open this file
-</code></pre></div></p>
-<p>It should look roughly like this
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">distributionBase</span><span class="o">=</span><span class="n">GRADLE_USER_HOME</span>
-<span class="n">distributionPath</span><span class="o">=</span><span class="n">wrapper</span><span class="o">/</span><span class="n">dists</span>
-<span class="n">distributionUrl</span><span class="o">=</span><span class="n">https</span><span class="err">\</span><span class="p">:</span><span class="c1">//services.gradle.org/distributions/gradle-6.8-bin.zip</span>
-<span class="n">zipStoreBase</span><span class="o">=</span><span class="n">GRADLE_USER_HOME</span>
-<span class="n">zipStorePath</span><span class="o">=</span><span class="n">wrapper</span><span class="o">/</span><span class="n">dists</span>
-</code></pre></div>
-</td></tr></table></p>
-<p>Where the line distribution is, change the <code>distributionUrl</code> so the version is <code>4.7</code>, like so:
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">distributionBase</span><span class="o">=</span><span class="n">GRADLE_USER_HOME</span>
-<span class="n">distributionPath</span><span class="o">=</span><span class="n">wrapper</span><span class="o">/</span><span class="n">dists</span>
-<span class="n">distributionUrl</span><span class="o">=</span><span class="n">https</span><span class="err">\</span><span class="p">:</span><span class="c1">//services.gradle.org/distributions/gradle-4.7-bin.zip</span>
-<span class="n">zipStoreBase</span><span class="o">=</span><span class="n">GRADLE_USER_HOME</span>
-<span class="n">zipStorePath</span><span class="o">=</span><span class="n">wrapper</span><span class="o">/</span><span class="n">dists</span>
-</code></pre></div>
-</td></tr></table></p>
-<p>This will take a bit of time, so just wait for it to download and install gradle</p>
-<hr />
-<h2 id="mixin-file">Mixin file</h2>
-<p>Create the file <code>mixins.PROJECT_NAME.json</code>, with the word <code>PROJECT_NAME</code> replaced with the project name that you decided on earlier, in the folder src/main/resources
-<div class="highlight"><pre><span></span><code>project
-    -&gt; src
-        -&gt; main
-            -&gt; resources
-                -&gt; mixins.PROJECT_NAME.json &lt;-- Create this file
-</code></pre></div></p>
-<p>In that file, add the content:</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Replace all instances of <code>GROUP_NAME</code> with our group name
-And all instances of <code>PROJECT_NAME</code> should be replaced with your project name</p>
-</div>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span>
-<span class="normal">6</span>
-<span class="normal">7</span>
-<span class="normal">8</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="p">{</span>
-  <span class="nt">&quot;required&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-  <span class="nt">&quot;compatibilityLevel&quot;</span><span class="p">:</span> <span class="s2">&quot;JAVA_8&quot;</span><span class="p">,</span>
-  <span class="nt">&quot;verbose&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-  <span class="nt">&quot;package&quot;</span><span class="p">:</span> <span class="s2">&quot;GROUP_NAME.PROJECT_NAME.mixins&quot;</span><span class="p">,</span>
-  <span class="nt">&quot;refmap&quot;</span><span class="p">:</span> <span class="s2">&quot;mixins.PROJECT_NAME.refmap.json&quot;</span><span class="p">,</span>
-  <span class="nt">&quot;mixins&quot;</span><span class="p">:</span> <span class="p">[]</span>
-<span class="p">}</span>
-</code></pre></div>
-</td></tr></table>
-<p>For example, if my group ID was <code>tech.lowspeccorgi</code>, and my project name was MixinClientTutorial, I would customise the <code>*.json</code> refmap file like so</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span>
-<span class="normal">6</span>
-<span class="normal">7</span>
-<span class="normal">8</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="p">{</span>
-  <span class="nt">&quot;required&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-  <span class="nt">&quot;compatibilityLevel&quot;</span><span class="p">:</span> <span class="s2">&quot;JAVA_8&quot;</span><span class="p">,</span>
-  <span class="nt">&quot;verbose&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-  <span class="nt">&quot;package&quot;</span><span class="p">:</span> <span class="s2">&quot;tech.lowspeccorgi.mixinclienttutorial.mixins&quot;</span><span class="p">,</span>
-  <span class="nt">&quot;refmap&quot;</span><span class="p">:</span> <span class="s2">&quot;mixins.MixinClientTutorial.refmap.json&quot;</span><span class="p">,</span>
-  <span class="nt">&quot;mixins&quot;</span><span class="p">:</span> <span class="p">[]</span>
-<span class="p">}</span>
-</code></pre></div>
-</td></tr></table>
-<p>I will explain this file <em>later</em>, but for now we don't need to know much about it</p>
-<hr />
-<h2 id="finishing-off">Finishing off</h2>
-<h3 id="creating-the-skeleton">Creating the skeleton</h3>
-<p>Remember the group ID seperated by dots you had?</p>
-<p>In the <code>java</code> folder outlined below, create a folder structure seperated by dots, with your project name, and a mixins folder
-<div class="highlight"><pre><span></span><code>project
-    -&gt; src
-        -&gt; java &lt;-- Go here
-</code></pre></div></p>
-<p>For example, if my group ID was <code>tech.lowspeccorgi</code>, and my project name was <code>MixinClientTutorial</code>, I would create a folder structure like so
+<h2 id="making-the-class">Making the class</h2>
+<p>So first, go to the mixins folder in your project heirachy
 <div class="highlight"><pre><span></span><code>project
     -&gt; src
         -&gt; java
-            -&gt; tech
-                -&gt; lowspeccorgi
-                    -&gt; mixinclienttutorial
-                        -&gt; mixins
+            -&gt; group_name
+                -&gt; project_name
+                    -&gt; mixins &lt;-- Go here
 </code></pre></div></p>
+<p>In the previous tutorial, in the <code>build.gradle</code> file, we set the tweakclass variable to something like so
+<div class="highlight"><pre><span></span><code><span class="n">tweakClass</span> <span class="o">=</span> <span class="s">&quot;tech.lowspeccorgi.mixinclienttutorial.mixins.MixinClientTutorialTweaker&quot;</span>
+</code></pre></div></p>
+<p>Take the last part of that (the tweaker class name), and in the mixins folder create a class by that name</p>
 <hr />
-<h3 id="configuring-the-project">Configuring the project</h3>
-<p>Now you can run the task <code>:setupDecompWorkspace</code></p>
-<p><img alt="Run decomp task" src="../../res/ST_DECOM_TASK.png" /></p>
-<p><strong>This will take some time</strong></p>
-<p>Next click the elephant reload button to get gradle to configure your project</p>
-<p><img alt="Configure project" src="../../res/BUILD_GRADLE.png" /></p>
+<h2 id="writing-the-tweaker">Writing the Tweaker</h2>
+<p>First, you need to implement the <code>ITweaker</code> interface, just add <code>implements ITweaker</code> to your class definition</p>
+<p>Next, you should add the launch arguments array, this will store any launch arguments needed for later
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="cm">/**</span>
+<span class="cm">    * This stores the Minecraft launch arguments  </span>
+<span class="cm">    */</span>
+<span class="kd">private</span> <span class="n">List</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">launchArgs</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;&gt;</span><span class="p">();</span>
+</code></pre></div>
+</td></tr></table></p>
+<p>Now we need to handle the launch arguments, or options, so you can simply just override <code>acceptOptions</code>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="cm">/**</span>
+<span class="cm">/**</span>
+<span class="cm">    * This handles the launch arguments passed towards minecraft</span>
+<span class="cm">    * @param args The launch arguments</span>
+<span class="cm">    * @param gameDir The game directory (ie: .minecraft)</span>
+<span class="cm">    * @param assetsDir The assets directory</span>
+<span class="cm">    * @param profile The game profile</span>
+<span class="cm">    */</span>
+<span class="nd">@Override</span>
+<span class="kd">public</span> <span class="kd">final</span> <span class="kt">void</span> <span class="nf">acceptOptions</span><span class="p">(</span><span class="n">List</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">args</span><span class="p">,</span> <span class="n">File</span> <span class="n">gameDir</span><span class="p">,</span> <span class="n">File</span> <span class="n">assetsDir</span><span class="p">,</span> <span class="n">String</span> <span class="n">profile</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="p">...</span>
+<span class="p">}</span>
+</code></pre></div>
+</td></tr></table></p>
+<p>Add the args to our <code>launchArgs</code> array, so we can use them later
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="c1">// Add the launch arguments to our launchArgs array</span>
+<span class="k">this</span><span class="p">.</span><span class="na">launchArgs</span><span class="p">.</span><span class="na">addAll</span><span class="p">(</span><span class="n">args</span><span class="p">);</span>
+</code></pre></div>
+</td></tr></table></p>
+<p>We're going to only deal with 3 options, so we can easily define them as a set of constants
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="c1">// Constants</span>
+<span class="kd">final</span> <span class="n">String</span> <span class="n">VERSION</span> <span class="o">=</span> <span class="s">&quot;--version&quot;</span><span class="p">;</span>
+<span class="kd">final</span> <span class="n">String</span> <span class="n">ASSET_DIR</span> <span class="o">=</span> <span class="s">&quot;--assetDir&quot;</span><span class="p">;</span>
+<span class="kd">final</span> <span class="n">String</span> <span class="n">GAME_DIR</span> <span class="o">=</span> <span class="s">&quot;--gameDir&quot;</span><span class="p">;</span>
+</code></pre></div>
+</td></tr></table></p>
+<p>Now we need to
+1. Check if the launch args contains each constant, if not add it
+2. Check if the profile isn't <code>null</code> (profile contains metadata about the game, for example, the version)</p>
+<p>We can do this by checking with a few <code>if</code> statements like so
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="c1">// Check if version is passed as a launch argument, if not add it</span>
+<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">args</span><span class="p">.</span><span class="na">contains</span><span class="p">(</span><span class="n">VERSION</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="n">profile</span> <span class="o">!=</span> <span class="kc">null</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">launchArgs</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">VERSION</span><span class="p">);</span>
+    <span class="n">launchArgs</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">profile</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="c1">// Check if assetDir is passed as a launch argument, if not add it</span>
+<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">args</span><span class="p">.</span><span class="na">contains</span><span class="p">(</span><span class="n">ASSET_DIR</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="n">profile</span> <span class="o">!=</span> <span class="kc">null</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">launchArgs</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">ASSET_DIR</span><span class="p">);</span>
+    <span class="n">launchArgs</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">profile</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="c1">// Check if gameDir is passed as a launch argument, if not add it</span>
+<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">args</span><span class="p">.</span><span class="na">contains</span><span class="p">(</span><span class="n">GAME_DIR</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="n">profile</span> <span class="o">!=</span> <span class="kc">null</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">launchArgs</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">GAME_DIR</span><span class="p">);</span>
+    <span class="n">launchArgs</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">profile</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+</td></tr></table></p>
+<p>You also need to define a function for injection into the class loader
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="cm">/**</span>
+<span class="cm">    * Inject into the MC class loader</span>
+<span class="cm">    * @param classLoader The class loader</span>
+<span class="cm">    */</span>
+<span class="nd">@Override</span>
+<span class="kd">public</span> <span class="kd">final</span> <span class="kt">void</span> <span class="nf">injectIntoClassLoader</span><span class="p">(</span><span class="n">LaunchClassLoader</span> <span class="n">classLoader</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="p">...</span>
+<span class="p">}</span>
+</code></pre></div>
+</td></tr></table></p>
+<p>For the injection function, you must first initialize <code>MixinBootsrap</code>, which is trivially done
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">MixinBootstrap</span><span class="p">.</span><span class="na">init</span><span class="p">();</span>
+</code></pre></div>
+</td></tr></table></p>
+<p>Next we need to register out mixin configuration file and retrieve the default mixin environment</p>
+<p>Just like in the <code>build.gradle</code> file, substitute <code>PROJECT_NAME</code> with your project's name</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="c1">// Retrieve the default mixin environment and register the config file</span>
+<span class="n">MixinEnvironment</span> <span class="n">environment</span> <span class="o">=</span> <span class="n">MixinEnvironment</span><span class="p">.</span><span class="na">getDefaultEnvironment</span><span class="p">();</span>
+
+<span class="n">environment</span><span class="p">.</span><span class="na">addConfiguration</span><span class="p">(</span><span class="s">&quot;mixins.PROJECT_NAME.json&quot;</span><span class="p">);</span>
+</code></pre></div>
+</td></tr></table>
+<p>Now we just need to check if there is no current obfuscation set, then set the obfuscation context to the <code>notch</code> obfuscation
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="c1">// Check if the obfuscation context is null</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">environment</span><span class="p">.</span><span class="na">getObfuscationContext</span><span class="p">()</span> <span class="o">==</span> <span class="kc">null</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">environment</span><span class="p">.</span><span class="na">setObfuscationContext</span><span class="p">(</span><span class="s">&quot;notch&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+</td></tr></table></p>
+<p>Now we need to inform Minecraft that this modification is running on the client side
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="c1">// This is a client side, client :)</span>
+<span class="n">environment</span><span class="p">.</span><span class="na">setSide</span><span class="p">(</span><span class="n">MixinEnvironment</span><span class="p">.</span><span class="na">Side</span><span class="p">.</span><span class="na">CLIENT</span><span class="p">);</span>
+</code></pre></div>
+</td></tr></table></p>
+<p>Lastly, we just add the boiler plate which allows Minecraft to retrieve the launch arguments and the launch target
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@Override</span>
+<span class="kd">public</span> <span class="n">String</span> <span class="nf">getLaunchTarget</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="k">return</span> <span class="n">MixinBootstrap</span><span class="p">.</span><span class="na">getPlatform</span><span class="p">().</span><span class="na">getLaunchTarget</span><span class="p">();</span>
+<span class="p">}</span>
+
+<span class="nd">@Override</span>
+<span class="kd">public</span> <span class="n">String</span><span class="o">[]</span> <span class="nf">getLaunchArguments</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="k">return</span> <span class="n">launchArgs</span><span class="p">.</span><span class="na">toArray</span><span class="p">(</span><span class="k">new</span> <span class="n">String</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+</td></tr></table></p>
 <hr />
-<h3 id="generating-run-configurations">Generating run configurations</h3>
-<p>In the same sidepanel where you pressed <code>setupDecompWorkspace</code>, you should see a button entitled <code>genIntelijRuns</code>, click that to run the <code>:genIntelijRuns</code> task</p>
-<p>After that is done, click the edit configurations button
-<img alt="Edit configurations button" src="../../res/ST_EDIT_CONF.png" /></p>
-<p>Then change the module to <code>PROJECT_NAME.main</code>, and click apply
-<img alt="Configuration screen" src="../../res/ST_CONF_SCREEN.png" /></p>
-<hr />
-<p>You can now run the project by clicking the green run button</p>
-<div class="admonition error">
-<p class="admonition-title">Error</p>
-<p>This won't work for now as we don't have a Tweaker, but I will get to that next tutorial</p>
-</div>
-<p><img alt="Run button" src="../../res/ST_RUN.png" /></p>
+<h2 id="you-should-now-be-able-to-run-the-client">🥳 You should now be able to run the client</h2>
 <hr />
 <h3 id="how-can-i-get-help-ask-questions-etcetera">How can I get help, ask questions, etcetera?</h3>
 <p>The easiest way is to join my <em>Discord server</em>, which you can find here
@@ -809,7 +771,7 @@ And all instances of <code>PROJECT_NAME</code> should be replaced with your proj
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../introduction/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 1 | Introduction" rel="prev">
+        <a href="../setting_up/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 2 | Setting up" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -818,20 +780,20 @@ And all instances of <code>PROJECT_NAME</code> should be replaced with your proj
               <span class="md-footer__direction">
                 Previous
               </span>
-              1 | Introduction
+              2 | Setting up
             </div>
           </div>
         </a>
       
       
         
-        <a href="../tweaker/" class="md-footer__link md-footer__link--next" aria-label="Next: 3 | Making a tweaker" rel="next">
+        <a href="../../InterfaceComponent/interface_component/" class="md-footer__link md-footer__link--next" aria-label="Next: About" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              3 | Making a tweaker
+              About
             </div>
           </div>
           <div class="md-footer__button md-icon">

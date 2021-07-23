@@ -36,6 +36,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://basil.is-a.dev/SkidKit/MixinClientTutorial/github_repo/</loc>
+         <lastmod>2021-07-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://basil.is-a.dev/SkidKit/MixinClientTutorial/introduction/</loc>
          <lastmod>2021-07-23</lastmod>
          <changefreq>daily</changefreq>

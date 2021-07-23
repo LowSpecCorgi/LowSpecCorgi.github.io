@@ -816,12 +816,10 @@
 <span class="normal"> 8</span>
 <span class="normal"> 9</span>
 <span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@ModifyArg</span><span class="p">(</span><span class="n">method</span> <span class="o">=</span> <span class="s">&quot;aMethod&quot;</span><span class="p">,</span> <span class="n">at</span> <span class="o">=</span> <span class="nd">@At</span><span class="p">(</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@ModifyArgs</span><span class="p">(</span><span class="n">method</span> <span class="o">=</span> <span class="s">&quot;aMethod&quot;</span><span class="p">,</span> <span class="n">at</span> <span class="o">=</span> <span class="nd">@At</span><span class="p">(</span>
             <span class="n">value</span> <span class="o">=</span> <span class="s">&quot;INVOKE&quot;</span><span class="p">,</span>
             <span class="n">target</span> <span class="o">=</span> <span class="s">&quot;Ljava/io/PrintStream;println(Ljava/lang/String;I)V&quot;</span><span class="p">,</span>
-            <span class="n">ordinal</span> <span class="o">=</span> <span class="mi">4</span><span class="p">),</span>
-           <span class="n">index</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span>
+            <span class="n">ordinal</span> <span class="o">=</span> <span class="mi">4</span><span class="p">))</span>
 <span class="kd">private</span> <span class="kt">void</span> <span class="nf">modifyOutput</span><span class="p">(</span><span class="n">Args</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
     <span class="n">String</span> <span class="n">x</span> <span class="o">=</span> <span class="n">args</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
     <span class="kt">int</span> <span class="n">nTimesToRepeat</span> <span class="o">=</span> <span class="n">args</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>

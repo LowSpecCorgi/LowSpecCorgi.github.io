@@ -575,7 +575,7 @@ Which means, we should make a <code>client</code> folder inside our mixins folde
                 -&gt; mixins
                     -&gt; client &lt;-- Create this
 </code></pre></div></p>
-<p>Since we don't want to polute Minecraft's namespace, we append the word <code>Mixin</code> to our mixin classes to avoid it clashing with Minecraft class names, which means, inside the client folder we just created, create a class by the name of <code>MinecraftMixin</code>, which will act as a mixin for the <code>Minecraft</code> class</p>
+<p>Since we don't want to pollute Minecraft's namespace, we append the word <code>Mixin</code> to our mixin classes to avoid it clashing with Minecraft class names, which means, inside the client folder we just created, create a class by the name of <code>MinecraftMixin</code>, which will act as a mixin for the <code>Minecraft</code> class</p>
 <hr />
 <h2 id="making-the-mixin">Making the mixin</h2>
 <p>We need to tell the Mixin library what class <code>MinecraftMixin</code> is going to act as a mixin for (a class that will add in it's own code to another class).</p>
@@ -595,7 +595,7 @@ Which means, we should make a <code>client</code> folder inside our mixins folde
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@Overwrite</span>
-<span class="kd">private</span> <span class="kt">void</span> <span class="nf">functioNameToOverwrite</span><span class="p">(</span><span class="kt">int</span> <span class="n">p1</span><span class="p">,</span> <span class="n">String</span> <span class="n">p2</span><span class="p">)</span> <span class="p">{</span>
+<span class="kd">private</span> <span class="kt">void</span> <span class="nf">functionNameToOverwrite</span><span class="p">(</span><span class="kt">int</span> <span class="n">p1</span><span class="p">,</span> <span class="n">String</span> <span class="n">p2</span><span class="p">)</span> <span class="p">{</span>
     <span class="p">...</span>
 <span class="p">}</span>
 </code></pre></div>
@@ -632,7 +632,7 @@ Which means, we should make a <code>client</code> folder inside our mixins folde
 </li>
 <li>
 <p>Where to inject
-    Injecting at the <code>HEAD</code> of this function will allow our code to run before Minecraft has been initalised, and <code>RETURN</code> will allow our code to run after Minecraft has been initalised, we will go for <code>RETURN</code> for now, but you can easily switch it</p>
+    Injecting at the <code>HEAD</code> of this function will allow our code to run before Minecraft has been initialized, and <code>RETURN</code> will allow our code to run after Minecraft has been initialized, we will go for <code>RETURN</code> for now, but you can easily switch it</p>
 </li>
 </ol>
 <p>We can now use the <code>@Inject</code> annotation to inject into the function <code>startGame</code>, at the location just before the function ends</p>

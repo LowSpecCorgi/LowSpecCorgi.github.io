@@ -689,11 +689,9 @@
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
-<span class="normal">5</span>
-<span class="normal">6</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@Redirect</span><span class="p">(</span><span class="n">method</span> <span class="o">=</span> <span class="s">&quot;startGame&quot;</span><span class="p">,</span> <span class="n">at</span> <span class="o">=</span> <span class="nd">@At</span><span class="p">(</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@Redirect</span><span class="p">(</span><span class="n">method</span> <span class="o">=</span> <span class="s">&quot;startGame&quot;</span><span class="p">,</span> <span class="n">at</span> <span class="o">=</span> <span class="nd">@At</span><span class="p">(</span>
         <span class="n">value</span> <span class="o">=</span> <span class="s">&quot;INVOKE&quot;</span><span class="p">,</span> <span class="n">target</span> <span class="o">=</span> <span class="s">&quot;Lorg/apache/logging/log4j/Logger;info(Ljava/lang/String;)V&quot;</span><span class="p">,</span> <span class="n">ordinal</span> <span class="o">=</span> <span class="mi">0</span><span class="p">))</span>
-<span class="kd">private</span> <span class="kt">void</span> <span class="nf">info</span><span class="p">(</span><span class="n">Logger</span> <span class="n">logger</span><span class="p">,</span> <span class="n">String</span> <span class="n">message</span><span class="p">)</span>
-<span class="p">{</span>
+<span class="kd">private</span> <span class="kt">void</span> <span class="nf">info</span><span class="p">(</span><span class="n">Logger</span> <span class="n">logger</span><span class="p">,</span> <span class="n">String</span> <span class="n">message</span><span class="p">)</span> <span class="p">{</span>
     <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">message</span> <span class="o">+</span> <span class="s">&quot; | custom logger handling!&quot;</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></div>

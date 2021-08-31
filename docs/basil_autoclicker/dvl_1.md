@@ -15,7 +15,7 @@ So, the first step into tricking an anticheat into thinking the user is naturall
 2. Click trends
     - This means that the user's CPS will follow a randomly chosen descent or ascent, at intervals
 
-#### We **cannot** consitently click at the same interval. <!-- {docsify-ignore} -->
+#### We **cannot** consistently click at the same interval. <!-- {docsify-ignore} -->
 What do I mean by this? Well, each time you click, you click at an interval from the previous click, this will, or should always be sufficiently different.
 
 Due to this inability to constantly click at the same interval (in millisecond terms), many anticheats can see that, and flag for an autoclicker.

@@ -10,7 +10,7 @@
 ## Contact me
 #### [Twitter](https://twitter.com/BasilicousYt)
 
-#### [Youtube](https://twitter.com/BasilicousYt)
+#### [Youtube](https://www.youtube.com/channel/UCYAf2_GesAKRgfVCaKN4kFg)
 
 #### [Github](https://github.com/lowspeccorgi)
 

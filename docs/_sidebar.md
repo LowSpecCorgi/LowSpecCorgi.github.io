@@ -1,5 +1,3 @@
-* [Back to coverpage](/#/)
-
 - Home
     - [About me](README.md)
 

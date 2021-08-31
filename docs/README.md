@@ -2,11 +2,9 @@
 
 > This is where I store articles, documentation, ect.
 
-#### [Back to coverpage](/)
-
 ## Projects
 - #### Basil autoclicker (sample from 8/31/2021, v0.0.1): STATUS ~> ACTIVE
-![Basil Autoclicker sample from 8/31/2021, v0.0.1](_media/project_samples/basil_clicker.png)
+![Basil Autoclicker sample from 8/31/2021, v0.0.1](/_media/project_samples/basil_clicker.png)
 - #### Cock client: STATUS ~> PLANNED
 
 ## Contact me

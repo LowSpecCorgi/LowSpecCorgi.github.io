@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+
+<head>
+	<title>Basil</title>
+	
+	<link rel="stylesheet" href="../../style.css">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div id="nav-border">
+		<nav>
+			<span id="logo">Basil</span>
+			<span id="divider">|</span>
+			<a href="../../index.html">Home</a>
+			<a href="../../about.html">About</a>
+		</nav>
+	</div>
+	<div id="content">
+		<div class="post-body">
+			<h1>Planet generation</h1>
+			<h4 id="post-meta">Author: Basilicous | Date: 01/05/22</h4>
+			<p>During my experiments with planet generation, I encountered a few problems and wanted to share my project, which is why this exists. <br>
+			So, traditionally game engines like Godot construct a sphere called a 'UV sphere', this is done by connecting circular segments which gradually decrease in size towards the poles. However, there is a problem.
+			With this method, the majority of the vertices become concentrated at the poles, leaving an uneven point distribution. </p>
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Sphere_wireframe_10deg_6r.svg/1200px-Sphere_wireframe_10deg_6r.svg.png">
+			<p class="caption">You can see the vertices 'bunch up' towards the poles here.</p></img>
+			<p>Unfortunately this renders a UV sphere unsuitable for terrain generation due to uneven point distribution. So how can this be fixed? Well, if we take a <a href="https://en.wikipedia.org/wiki/Platonic_solid">Platonic solid</a>, like a cube</p>
+			<img src="https://www.daviddarling.info/images/Platonic_solids.jpg">
+			<p class="caption">All 5 platonic solids.</p></img>
+			<p>Next, we must subdivide each side on the platonic solid. This is done by repeatedly adding vertices to the midpoints on every triangle on the shape. Adding more triangles effectively increases the shape's resolution.</p>
+			<img src="https://i.stack.imgur.com/JP62n.png">
+			<p class="Visual example of subdivison."></p></img>
+			<p>Then we normalise the vertices on each side (reduce the lengths of the vectors storing vertex data on each side to 1 by dividing each component of the vector by the length/magnitude of the vector)</p>
+			<img src="https://i.stack.imgur.com/p9a1c.gif"><p class="caption">Demonstration of this process in 3d.</p></img>
+			<img src="https://i.stack.imgur.com/OXQSw.gif"><p class="caption">Demonstration of this process in 2d.</p></img>
+			<p>Now we should be left with a sphere, with (somewhat) even point generation.
+				The next part of this process is fortunately the simplest, by simply overlaying noise to each vertice (during the mesh generation), we can recieve quite good results.
+				<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/hjAjorYc9Fc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</p>
+
+		</div>
+	</div>
+	<footer><p>© 2022 Basilicous, All rights reserved.</p></footer>
+</body>

@@ -101,6 +101,17 @@ img {
     	display: block;
 }
 
+
+iframe {
+	width: 90%;
+	max-width: 550px;
+	padding: 10px;
+	margin-left: 15px;
+	border: 1px dotted var(--cream);
+	margin: 10px auto 20px;
+    	display: block;
+}
+
 .caption {
 	width: 90%;
 	max-width: 550px;

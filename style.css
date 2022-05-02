@@ -26,6 +26,7 @@ BLACK -> #252120
 body {
 	background-color: var(--black);
 	font-family: 'Courier New', monospace;
+	margin-bottom: 150px;
 }
 
 .title { margin-left: 15px; }
@@ -195,10 +196,9 @@ a {
 }
 
 footer {
-	position: fixed
+	position: fixed;
 	bottom: 0;
 	left: 0;
-	margin-top: 15px;
 	padding-top: 1px;
 	padding-bottom: 1px;
 	text-align: center;
